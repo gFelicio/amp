@@ -14,3 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/desk', function()
+{
+    return view('amp.canon.landing.landing');
+})->name('desk');
+
+Route::get('mob', function()
+{
+    return view('amp.amphtml.landing.landing');
+})->name('mob');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

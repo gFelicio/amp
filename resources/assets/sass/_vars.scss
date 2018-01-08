@@ -1,0 +1,67 @@
+$titleColor: #5a6461;
+$textColor: #737e7a;
+
+@mixin fullWidth
+{
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+@mixin borderedSection
+{
+    margin: 0 5%;
+    padding: 2%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin textSize
+{
+    font-size: 18px;
+}
+
+@mixin testBorder
+{
+    border: 3px solid gold;
+}
+
+.caption
+{
+    @include fullWidth;
+    padding: 0 5%;
+    margin-top: 2%;
+    text-align: center;
+
+    >span
+    {
+        color: #a59d9d;
+    }
+}
+
+.tags
+{
+    background-color:#d0d0d0;
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 0.3% 5%;
+}
+
+.error
+{
+    color: #F63B3B;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.quote
+{
+    background-color: #DDEAF0;
+    padding: 5%;
+    font-family: monospace;
+    font-size: 20px;
+    color: $textColor;
+}

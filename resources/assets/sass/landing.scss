@@ -1,0 +1,184 @@
+@import '_general';
+@import '_vars';
+
+.pageTitle
+{
+    @include fullWidth;
+    margin: 5% 0;
+
+    >h1
+    {
+        @include fullWidth;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: $titleColor;
+    }
+}
+
+.mainImgDiv
+{
+    margin: 0;
+}
+
+.imgDiv
+{
+    @include fullWidth;
+    margin: 0;
+    padding: 5%;
+
+    >amp-img
+    {
+        margin: 0 10%;
+        border-radius: 3%;
+    }
+}
+
+.info
+{
+    @include fullWidth;
+    @include borderedSection;
+    padding: 5%;
+
+    // >a
+    // {
+    //     text-decoration: none;
+    //     color: grey;
+
+    //     &:hover
+    //     {
+    //         color: teal;
+    //     }
+
+    //     &:active
+    //     {
+    //         color: grey;
+    //         text-decoration: line-through;
+    //     }
+
+    //     &:visited
+    //     {
+    //         color: grey;
+    //     }
+    // }
+
+    >span
+    {
+        &:nth-child(1)
+        {
+            color: grey;
+        }
+
+        &:nth-child(2)
+        {
+            color: grey;
+            font-size: small ;
+        }
+    }
+}
+.social
+{
+    @include fullWidth;
+    @include borderedSection;
+
+    >a
+    {
+        >svg
+        {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.txtDiv
+{
+    @include fullWidth;
+    margin: 0;
+    padding: 0 5%;
+    text-align: justify;
+
+    >p
+    {
+        margin: 5% 10%;
+        color: $textColor;
+        @include textSize;
+    }
+}
+
+.flexDiv
+{
+    margin: 0;
+    display: flex;
+
+    >a
+    {
+        @include fullWidth;
+
+        >amp-img
+        {
+            margin: 0;
+        }
+    }
+}
+
+.textFlex
+{
+    @include fullWidth;
+    margin: 0;
+    padding: 0 5%;
+    text-align: justify;
+
+    >p
+    {
+        margin: 5% 10%;
+        color: $textColor;
+        @include textSize;
+    }
+}
+
+.vidDiv
+{
+    @include fullWidth;
+
+    >amp-youtube
+    {
+        @include fullWidth;
+    }
+
+    >amp-video
+    {
+        @include fullWidth;
+    }
+}
+
+.subTitle
+{
+    @include fullWidth;
+    padding: 0 5%;
+    text-align: center;
+
+    >h2
+    {
+        margin: 5% 10%;
+        color: $titleColor;
+    }
+}
+
+@media(min-width: 768px)
+{
+    .info
+    {
+        margin-top: 0;
+    }
+
+    .txtDiv
+    {
+        padding-top: 3%;
+
+        >p
+        {
+            margin-top: 0;
+        }
+    }
+}
