@@ -38,6 +38,12 @@ $textColor: #737e7a;
     >span
     {
         color: #a59d9d;
+
+        >a
+        {
+            text-decoration: none;
+            color: #a59d9d;
+        }
     }
 }
 

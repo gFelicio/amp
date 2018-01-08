@@ -33,5 +33,15 @@
         <amp-img src="https://www.ampproject.org/examples/images/amp.jpg" width="900" height="508" layout="responsive"></amp-img>
     </div>
 
-    @include('amp.partials.landing.secondDiv')
+    @include('amp.partials.landing.info')
+
+    @include('amp.partials.landing.social')
+
+    @include('amp.partials.landing.text')
+
+    @include('amp.partials.landing.flex')
+
+    @include('amp.partials.landing.textFlex')
+
+    @include('amp.partials.landing.videoEmbed')
 @endsection

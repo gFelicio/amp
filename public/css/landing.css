@@ -27,6 +27,9 @@ a:active {
   text-align: center; }
   .caption > span {
     color: #a59d9d; }
+    .caption > span > a {
+      text-decoration: none;
+      color: #a59d9d; }
 
 .tags {
   background-color: #d0d0d0;

@@ -15,7 +15,7 @@
 
     <div class="caption">
         <span>
-            So, this is the video. I took a very big video on purpose so we could checkthe load time. Open your browser console and check it.
+            So, this is the video. Download <a href="https://www.youtube.com/watch?v=a5X_Ot-R6lo">this video</a> and embed it here. Go to the original file and just rename it to the same name it has in the tag and you're good to go test it.I took a very big video on purpose so we could check the load time. Open your browser console and check it. Also, remember: Github doesn't accept files with ++100MB, so if you're going to up your repo with your test, ignore the video file.
         </span>
     </div>
 
@@ -45,7 +45,7 @@
             Another thing to notice (last one, I guess), is that the component for <span class="tags">amp-story</span> is the only one (that I used) that throws an error in console. If the extension is loaded, but can't find any <span class="tags">amp-story</span> element in the page, the console will read <span class="error">The extension 'amp-story' was found on this page, but is unused. Please remove this extension.</span>.
         </p>
         <p>
-            If you check the origin file, you'll see I loaded the form extension so I can use forms in my page (because, you know, forms aren't useful for web pages AT ALL) and there are no forms on my page (because I either haven't implemented any, commented them out or they simply don't exist on this page) and the extension didn't throw an error. So, weird stuff that I can't fix and I haven't found any type of help, either online or with fellow web devs.
+            If you check the origin file, you'll see I loaded the form extension so Google AMP allows me to use forms in my page (because, you know, forms aren't useful for web pages AT ALL) and there are no forms on my page (because I either haven't implemented any, commented them out or they simply don't exist on this page) and the extension didn't throw an error. So, weird stuff that I can't fix and I haven't found any type of help, either online or with fellow web devs.
         </p>
         <p>
             <div class="quote">
