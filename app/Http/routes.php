@@ -29,6 +29,11 @@ Route::get('mob', function()
     return view('amp.amphtml.landing.landing');
 })->name('mob');
 
+Route::get('/mini', function()
+{
+    return view('mini')->name('mini');
+});
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');

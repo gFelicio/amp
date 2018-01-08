@@ -20,7 +20,7 @@ elixir(function(mix) {
 gulp.task('sass', function()
 {
     return gulp.src('resources/assets/sass/*.scss')
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(gulp.dest('public/css'))
 });
 

@@ -22,6 +22,8 @@
     </title>
 </head>
 <body>
+    @include('amp.partials.component.header')
+
     <div class="container">
         <div class="pageTitle">
             <h1>

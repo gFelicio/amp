@@ -1,3 +1,5 @@
+@import '_vars';
+
 body
 {
     box-sizing: border-box;
@@ -31,3 +33,76 @@ a:active
     text-decoration: line-through;
 }
 
+
+
+.caption
+{
+    @include fullWidth;
+    padding: 0 5%;
+    margin-top: 2%;
+    text-align: center;
+
+    >span
+    {
+        color: #a59d9d;
+
+        >a
+        {
+            text-decoration: none;
+            color: #a59d9d;
+        }
+    }
+}
+
+.tags
+{
+    background-color:#d0d0d0;
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 0.3% 5%;
+}
+
+.error
+{
+    color: #F63B3B;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.quote
+{
+    background-color: #DDEAF0;
+    padding: 5%;
+    font-family: monospace;
+    font-size: 20px;
+    color: $textColor;
+}
+
+.header,
+.footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    >span
+    {
+        margin: 15% 20%;
+        color: #c3bfba;
+    }
+}
+
+.header
+{
+    max-height: 75px;
+    background-color: #80adad;
+    margin-bottom: 10%;
+}
+
+.footer
+{
+    background-color: #405656;
+    margin-top: 15%;
+}

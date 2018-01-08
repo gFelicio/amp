@@ -21,7 +21,8 @@
 
 @push('customStyle')
     @php
-        $file = "/css/landing.css";
+        $file = "/css/landingmain.css";
+
         readfile( getcwd() . "$file");
     @endphp
 @endpush
@@ -54,4 +55,6 @@
     @include('amp.partials.landing.videoEmbed')
 
     @include('amp.partials.landing.carousel')
+
+    @include('amp.partials.component.footer')
 @endsection
