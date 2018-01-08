@@ -18,7 +18,7 @@
     </style>
 
     <title>
-        Google's AMP Test
+        Google AMP Test
     </title>
 </head>
 <body>

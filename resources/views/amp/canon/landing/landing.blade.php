@@ -4,6 +4,10 @@
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 @endpush
 
 @push('boilerplate')
@@ -43,5 +47,11 @@
 
     @include('amp.partials.landing.textFlex')
 
+    @include('amp.partials.landing.vidDiv')
+
+    @include('amp.partials.landing.txt')
+
     @include('amp.partials.landing.videoEmbed')
+
+    @include('amp.partials.landing.carousel')
 @endsection
