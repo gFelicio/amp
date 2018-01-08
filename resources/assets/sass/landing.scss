@@ -40,28 +40,6 @@
     @include borderedSection;
     padding: 5%;
 
-    // >a
-    // {
-    //     text-decoration: none;
-    //     color: grey;
-
-    //     &:hover
-    //     {
-    //         color: teal;
-    //     }
-
-    //     &:active
-    //     {
-    //         color: grey;
-    //         text-decoration: line-through;
-    //     }
-
-    //     &:visited
-    //     {
-    //         color: grey;
-    //     }
-    // }
-
     >span
     {
         &:nth-child(1)
@@ -72,10 +50,11 @@
         &:nth-child(2)
         {
             color: grey;
-            font-size: small ;
+            font-size: small;
         }
     }
 }
+
 .social
 {
     @include fullWidth;
@@ -165,6 +144,17 @@
     }
 }
 
+.carDiv
+{
+    @include fullWidth;
+}
+
+.amp-carousel-button-next,
+.amp-carousel-button-prev
+{
+    background-size: 10px 10px;
+}
+
 @media(min-width: 768px)
 {
     .info
@@ -172,13 +162,185 @@
         margin-top: 0;
     }
 
-    .txtDiv
+    .txtDiv,
+    .textFlex
     {
-        padding-top: 3%;
+        padding: 3% 10%;
 
         >p
         {
             margin-top: 0;
         }
+    }
+
+    .amp-carousel-button-next,
+    .amp-carousel-button-prev
+    {
+        background-size: 25px 25px;
+    }
+
+    .amp-carousel-button
+    {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media(min-width: 1024px)
+{
+    .pageTitle
+    {
+        >h1
+        {
+            font-size: 50px;
+        }
+    }
+
+    .info
+    {
+        >span
+        {
+            &:nth-child(1)
+            {
+                color: grey;
+                font-size: 25px;
+            }
+
+            &:nth-child(2)
+            {
+                color: grey;
+                font-size: initial;
+            }
+        }
+    }
+
+    .social
+    {
+        >a
+        {
+            >svg
+            {
+                width: 65px;
+                height: 65px;
+            }
+        }
+    }
+
+    .txtDiv,
+    .textFlex
+    {
+        >p
+        {
+            font-size: 25px;
+            margin-bottom: 3%;
+        }
+    }
+
+    .subTitle
+    {
+        >h2
+        {
+            font-size: 40px;
+        }
+    }
+}
+
+@media(min-width: 1440px)
+{
+    .pageTitle
+    {
+        >h1
+        {
+            font-size: 60px;
+        }
+    }
+
+    .txtDiv,
+    .textFlex
+    {
+        >p
+        {
+            font-size: 30px;
+        }
+    }
+
+    .subTitle
+    {
+        >h2
+        {
+            font-size: 50px;
+        }
+    }
+}
+
+@media(min-width: 2560px)
+{
+    .pageTitle
+    {
+        >h1
+        {
+            font-size: 90px;
+        }
+    }
+
+    .info
+    {
+        padding: 3% 5%;
+
+        >span
+        {
+            &:nth-child(1)
+            {
+                color: grey;
+                font-size: 60px;
+            }
+
+            &:nth-child(2)
+            {
+                color: grey;
+                font-size: 35px;
+            }
+        }
+    }
+
+    .social
+    {
+        >a
+        {
+            >svg
+            {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    }
+
+    .txtDiv,
+    .textFlex
+    {
+        >p
+        {
+            font-size: 60px;
+        }
+    }
+
+    .subTitle
+    {
+        >h2
+        {
+            font-size: 80px;
+        }
+    }
+
+    .amp-carousel-button-next,
+    .amp-carousel-button-prev
+    {
+        background-size: 70px 70px;
+    }
+
+    .amp-carousel-button
+    {
+        height: 75px;
+        width: 75px;
     }
 }

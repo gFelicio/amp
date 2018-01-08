@@ -71,3 +71,84 @@ $textColor: #737e7a;
     font-size: 20px;
     color: $textColor;
 }
+
+@media(min-width: 1024px)
+{
+    .caption
+    {
+        >span
+        {
+            font-size: 20px;
+
+            >a
+            {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .tags,
+    .error
+    {
+        font-size: 20px;
+    }
+
+    .quote
+    {
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 1440px)
+{
+    .caption
+    {
+        >span
+        {
+            font-size: 25px;
+
+            >a
+            {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .tags,
+    .error
+    {
+        font-size: 25px;
+    }
+
+    .quote
+    {
+        font-size: 35px;
+    }
+}
+
+@media(min-width: 2560px)
+{
+    .caption
+    {
+        >span
+        {
+            font-size: 45px;
+
+            >a
+            {
+                font-size: 45px;
+            }
+        }
+    }
+
+    .tags,
+    .error
+    {
+        font-size: 45px;
+    }
+
+    .quote
+    {
+        font-size: 60px;
+    }
+}
