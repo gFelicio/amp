@@ -5,6 +5,9 @@
     <p>
         Anyway, AMP created a SEPARATE component so web devs can implement these carousels in their pages. Even though I don't really like this component, either created by devs or by AMP, I know there are people that like them, their functionality and also that a lot of pages use it to advertise their own articles or any other thing they want. So, basically, keep in mind, people love this stuff. They use it in their stuff and all.
     </p>
+    <p>
+        So it is really weird (for a lack of a better word) that AMP butchered this component in ANOTHER JS library with over 1100 lines (about 500 minified). I'm saying this because I am not even close to being an OK web developer, but even I once created a carousel component script that used only 40 lines of code or so. So what is the benefit of using the AMP component?
+    </p>
 </div>
 
 <div class="carDiv">
