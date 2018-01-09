@@ -5,7 +5,7 @@
 <div class="panel">
     <div class="panel__head">
         <span>
-            read more news below
+            read some other stuff below
         </span>
     </div>
 
