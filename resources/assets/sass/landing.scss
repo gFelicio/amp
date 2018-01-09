@@ -1,4 +1,4 @@
-@import '_vars';
+@import '_general';
 
 .pageTitle
 {
@@ -95,7 +95,7 @@
 
         >amp-img
         {
-            margin: 0;
+            margin: 5% 10%;
         }
     }
 }
@@ -119,14 +119,11 @@
 {
     @include fullWidth;
 
-    >amp-youtube
-    {
-        @include fullWidth;
-    }
-
+    >amp-youtube,
     >amp-video
     {
         @include fullWidth;
+        margin: 5% 10%;
     }
 }
 
@@ -152,4 +149,94 @@
 .amp-carousel-button-prev
 {
     background-size: 10px 10px;
+}
+
+.panel
+{
+    @include fullWidth;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5%;
+
+    &__head
+    {
+        width: inherit;
+        background-color: #d0d4d2;
+        padding: 3%;
+
+        >span
+        {
+            text-transform: uppercase;
+            margin: 5% 10%;
+            color: grey;
+        }
+    }
+
+    &__body
+    {
+        margin: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.board
+{
+    max-width: 85%;
+    margin: 3%;
+    border: 1px solid #cbd5da;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    &__head
+    {
+        @include fullWidth;
+        display: inline-table;
+
+        >a
+        {
+            >amp-img
+            {
+
+            }
+        }
+    }
+
+    &__body
+    {
+        @include fullWidth;
+        margin: 3%;
+        padding: 5%;
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+        text-align: center;
+
+        >span
+        {
+            @include fullWidth;
+            font-size: 15px;
+            color: grey;
+            text-transform: capitalize;
+        }
+    }
+
+    &__foot
+    {
+        @include fullWidth;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+
+        >a
+        {
+            @include fullWidth;
+            text-decoration: none;
+            color: grey;
+            font-size: 10px;
+            padding: 3%;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
 }

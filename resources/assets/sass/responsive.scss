@@ -27,23 +27,25 @@
         height: 30px;
         width: 30px;
     }
+
+    .board
+    {
+        max-width: 40%;
+
+        &__foot
+        {
+            >a
+            {
+                font-size: 13px;
+            }
+        }
+    }
 }
 
 @media(min-width: 1024px)
 {
-    .caption
-    {
-        >span
-        {
-            font-size: 20px;
-
-            >a
-            {
-                font-size: 20px;
-            }
-        }
-    }
-
+    .caption>span,
+    .caption>span>a,
     .tags,
     .error
     {
@@ -76,7 +78,6 @@
             &:nth-child(2)
             {
                 color: grey;
-                font-size: initial;
             }
         }
     }
@@ -110,23 +111,44 @@
             font-size: 40px;
         }
     }
-}
 
-@media(min-width: 1440px)
-{
-    .caption
+    .panel
     {
-        >span
+        &__head
         {
-            font-size: 25px;
-
-            >a
+            >span
             {
-                font-size: 25px;
+                font-size: 23px;
             }
         }
     }
 
+    .board
+    {
+        max-width: 25%;
+
+        &__body
+        {
+            >span
+            {
+                font-size: 22px;
+            }
+        }
+
+        &__foot
+        {
+            >a
+            {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media(min-width: 1440px)
+{
+    .caption>span,
+    .caption>span>a,
     .tags,
     .error
     {
@@ -162,23 +184,23 @@
             font-size: 50px;
         }
     }
+
+    .panel
+    {
+        &__head
+        {
+            >span
+            {
+                font-size: 28px;
+            }
+        }
+    }
 }
 
 @media(min-width: 2560px)
 {
-    .caption
-    {
-        >span
-        {
-            font-size: 45px;
-
-            >a
-            {
-                font-size: 45px;
-            }
-        }
-    }
-
+    .caption>span,
+    .caption>span>a,
     .tags,
     .error
     {
@@ -257,5 +279,35 @@
     {
         height: 75px;
         width: 75px;
+    }
+
+    .panel
+    {
+        &__head
+        {
+            >span
+            {
+                font-size: 55px;
+            }
+        }
+    }
+
+    .board
+    {
+        &__body
+        {
+            >span
+            {
+                font-size: 45px;
+            }
+        }
+
+        &__foot
+        {
+            >a
+            {
+                font-size: 40px;
+            }
+        }
     }
 }

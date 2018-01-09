@@ -32,5 +32,7 @@
         </div>
         @yield('content')
     </div>
+
+    @include('amp.partials.component.footer')
 </body>
 </html>
