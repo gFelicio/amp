@@ -38,7 +38,7 @@
             cowabunga
         </a>
         <a href="https://www.youtube.com/watch?v=fM7qNm_Mmrw">
-            you're tearing me apart
+            you're tearing me apart!
         </a>
     </div>
 </div>
