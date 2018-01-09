@@ -5,6 +5,9 @@
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+
+
     @stack('amp-component')
 
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">

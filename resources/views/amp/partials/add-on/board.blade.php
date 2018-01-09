@@ -1,17 +1,36 @@
 @php
+    $link = rand(10, 13);
+
+    if($link == 10)
+    {
+        $link = 'https://github.com/gFelicio/cms';
+    }
+    elseif($link == 11)
+    {
+        $link = 'https://github.com/gFelicio/cssflex';
+    }
+    elseif($link == 12)
+    {
+        $link = 'https://github.com/gFelicio/UuidGuid';
+    }
+    else
+    {
+        $link = 'https://github.com/gFelicio/sggulp';
+    }
+
     $num = rand(1, 9);
 @endphp
 
 <div class="board">
     <div class="board__head">
-        <a href="https://github.com/gFelicio/agenda">
+        <a href="{{ $link }}">
             <amp-img src="{{ asset('img/img_' . $num . '.png') }}"  width="400" height="300" layout="responsive">
             </amp-img>
         </a>
     </div>
     <div class="board__body">
         <span>
-            let's talk a little bit about this link I am linking here, so, ok, let's begin.
+            check out my other repositories here on gitHub
         </span>
     </div>
     <div class="board__foot">

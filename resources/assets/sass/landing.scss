@@ -156,7 +156,7 @@
     @include fullWidth;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 5%;
+    margin: 15% 5%;
 
     &__head
     {
@@ -174,10 +174,10 @@
 
     &__body
     {
-        margin: 2%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        background-color: #f5f5f5;
     }
 }
 
@@ -185,9 +185,10 @@
 {
     max-width: 85%;
     margin: 3%;
-    border: 1px solid #cbd5da;
+    border: 1px solid #a2aaae;
     display: inline-flex;
     flex-wrap: wrap;
+    background-color: #fafafa;
 
     &__head
     {
