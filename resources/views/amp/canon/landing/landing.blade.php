@@ -30,7 +30,7 @@
 @section('content')
 
     @section('pageTitle')
-        Long Page Title Is Long
+        let's talk about google AMP, but just a little, not a lot, because my time is short. while we're at it, let's check the line break for the title. also, long title is long
     @endsection
 
 

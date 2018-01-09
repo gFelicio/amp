@@ -5,7 +5,7 @@
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700" rel="stylesheet">
 
 
     @stack('amp-component')
