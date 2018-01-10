@@ -4,15 +4,6 @@
 {
     @include fullWidth;
     margin: 5% 0;
-
-    >h1
-    {
-        @include fullWidth;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        color: $titleColor;
-    }
 }
 
 .mainImgDiv
@@ -79,15 +70,6 @@
         margin: 5% 10%;
         color: $textColor;
         @include textSize;
-    }
-
-    >h2
-    {
-        @include fullWidth;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        color: $titleColor;
     }
 }
 
