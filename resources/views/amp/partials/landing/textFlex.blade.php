@@ -28,6 +28,11 @@
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
+
+    <div class="imgDiv">
+        <amp-img src="{{ asset('img/img_3.png') }}" width="500" height="400" layout="responsive"></amp-img>
+    </div>
+
     <p>
         Remember that Google AMP has JavaScript components, but what does it mean? Well, simply put, it means that you have to load ANOTHER JavaScript library so you can, for example, use forms in your page or even simply embed YouTube videos.
     </p>

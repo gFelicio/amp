@@ -23,6 +23,11 @@
         <p>
             An important thing to note about embedding videos directly from server: if you noticed, I am using the Laravel Framework, which is a kinda flexible framework. It uses the Artisan tool so you can use a lot of commands, one of them lets you boot up a local server so you can see and test your work. If you are reading this in a browser, then you know this already.
         </p>
+
+        <div class="imgDiv">
+            <amp-img src="{{ asset('img/img_2.png') }}" width="500" height="400" layout="responsive"></amp-img>
+        </div>
+
         <p>
             To boot up your test server, you type into command line <span class="tags">php artisan serve</span> and the tool will take care of resolving the url and the port it will use. Usually, it will be <span class="tags">localhost:8000</span> or some equivalent to that.
         </p>
@@ -35,6 +40,11 @@
         <p>
             OF COURSE you can edit a few files, mess up a bit with your configuration and whatnot and make your localhost server boot up directly in a way you can test it in a mobile, but I am not interested in that, seeing that this is only a test page to check how to use and set up Google AMP, but if you feel like mobile testing this local video embed component, feel free to mess up stuff. Tell me how it went afterwards. =D
         </p>
+
+        <div class="imgDiv">
+            <amp-img src="{{ asset('img/img_6.png') }}" width="500" height="400" layout="responsive"></amp-img>
+        </div>
+
         <p>
             Another thing that happened was that the <span class="tags">amp-video</span> element threw an error in console that says <span class="error">The tag 'amp-story >> amp-video' may only appear as a descendant of tag 'amp-story'.</span>. I honestly don't know how to fix that, except commenting out the tag. So, go to origin file and uncomment the <span class="tags">amp-video</span> tag so you can see the error and help me fix it.
         </p>
@@ -47,6 +57,11 @@
         <p>
             If you check the origin file, you'll see I loaded the form extension so Google AMP allows me to use forms in my page (because, you know, forms aren't useful for web pages AT ALL) and there are no forms on my page (because I either haven't implemented any, commented them out or they simply don't exist on this page) and the extension didn't throw an error. So, weird stuff that I can't fix and I haven't found any type of help, either online or with fellow web devs.
         </p>
+
+        <div class="imgDiv">
+            <amp-img src="{{ asset('img/img_1.png') }}" width="500" height="400" layout="responsive"></amp-img>
+        </div>
+
         <p>
             <div class="quote">
                 But, dude! I uncommented the video and it is playing, even with that error. What's the problem, anyway?

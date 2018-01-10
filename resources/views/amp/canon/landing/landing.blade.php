@@ -56,5 +56,7 @@
 
     @include('amp.partials.landing.carousel')
 
+    @include('amp.partials.landing.last')
+
     @include('amp.partials.component.panel')
 @endsection

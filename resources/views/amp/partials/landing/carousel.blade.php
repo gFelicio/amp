@@ -34,6 +34,9 @@
 
 <div class="txtDiv">
     <p>
+        Well, basically, speed. AMP loads pages with amazing speed (even if it has a lot of JavaScript embedded in it), which, in return, is good for the page indexing in Google's search engine. As I said before, here is where the controversy lies, because everyone wants a good result position when someone searches for something that your page has, and one of the pillars of this good positioning is if the page is fast or not. Google's algorithm will automatically push down a page's positioning if it isn't fast, if it isn't mobile friendly and now AMP is here to boost this.
+    </p>
+    <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

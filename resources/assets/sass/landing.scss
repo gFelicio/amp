@@ -80,6 +80,15 @@
         color: $textColor;
         @include textSize;
     }
+
+    >h2
+    {
+        @include fullWidth;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: $titleColor;
+    }
 }
 
 .flexDiv
