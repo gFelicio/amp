@@ -33,3 +33,8 @@ Route::get('/shambalaya', function()
 {
     return view('test');
 });
+
+Route::get('color', function()
+{
+    return view('colour');
+});

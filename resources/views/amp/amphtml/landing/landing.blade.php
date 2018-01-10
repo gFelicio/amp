@@ -14,7 +14,11 @@
 @endpush
 
 @push('customStyle')
-    @include('amp.custom-style.landing')
+    @php
+        $file = "/css/landingmain.css";
+
+        readfile( getcwd() . "$file");
+    @endphp
 @endpush
 
 @section('content')
