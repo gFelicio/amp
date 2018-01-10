@@ -24,16 +24,12 @@ Route::get('/desk', function()
     return view('amp.canon.landing.landing');
 })->name('desk');
 
-Route::get('mob', function()
+Route::get('/mob', function()
 {
     return view('amp.amphtml.landing.landing');
 })->name('mob');
 
-Route::get('/mini', function()
+Route::get('/shambalaya', function()
 {
-    return view('mini')->name('mini');
+    return view('test');
 });
-
-Route::auth();
-
-Route::get('/home', 'HomeController@index');

@@ -33,23 +33,15 @@ a:active
     text-decoration: line-through;
 }
 
-h1
-{
-    @include fullWidth;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    color: $titleColor;
-}
-
+h1,
 h2
 {
     @include fullWidth;
-    font-size: 1.8em;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     color: $titleColor;
+    margin: 10% 5%;
 }
 
 .caption
