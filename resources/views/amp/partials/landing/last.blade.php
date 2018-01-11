@@ -18,13 +18,16 @@
         Let's begin now.
     </p>
     <p>
-        Simulating an Online page load (this means connected to a high speed Wi-Fi), the first fold loads in 641 mili seconds and finishes at 5.67 seconds. It means that I have content shown for me practically instantaneously, given that the browser window loads the elements in less than 50 mili seconds. That's REALLY fast, but keep in mind that the first fold doesn't have much content to load.
+        Simulating an Online page load (this means connected to a high speed Wi-Fi), the first fold loads in 641 milliseconds and finishes at 5.67 seconds. It means that I have content shown for me practically instantaneously, given that the browser window loads the elements in less than 50 milliseconds. That's REALLY fast, but keep in mind that the first fold doesn't have much content to load.
     </p>
     <p>
-        Simulating a Fast 3G connection we have a drop in the load speed, which is reasonable and also expected. The page loads in 3.20 seconds and finishes at 8.95 seconds, with content shown at less than 820 mili seconds. Still pretty fast, in my opinion, given that users are more inclined to leave your page if it takes over 10 seconds to load.
+        Simulating a Fast 3G connection we have a drop in the load speed, which is reasonable and also expected. The page loads in 3.20 seconds and finishes at 8.95 seconds, with content shown at less than 820 milliseconds. Still pretty fast, in my opinion, given that users are more inclined to leave your page if it takes over 10 seconds to load.
     </p>
     <p>
         When we simulate a Slow 3G connection, these numbers drop a lot, which is expected, remember. The page loads in 12.31 seconds and finishes at 20.29 seconds. That's a little bit high, seeing that the first fold is poor. But, if you check what the browser is requesting, you'll see that it pre-loads the page up until the first video (YouTube embedded). Also notice that the content is shown in the page in less than 3 seconds. Pretty fast.
+    </p>
+    <p>
+        Keep in mind everything I said before and also this: I wrote this bit before finishing the project entirely. I made a few tweaks at the code after I wrote these numbers, so I am pretty certain that RIGHT NOW we have smaller load times, seeing that I optimized it a little bit.
     </p>
 </div>
 

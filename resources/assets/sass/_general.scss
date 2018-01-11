@@ -54,11 +54,13 @@ h2
     >span
     {
         color: #a59d9d;
+        font-size: 12px;
 
         >a
         {
             text-decoration: none;
             color: #a59d9d;
+            font-size: 12px;
         }
     }
 }
@@ -84,7 +86,7 @@ h2
     background-color: #DDEAF0;
     padding: 5%;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 15px;
     color: $textColor;
 }
 
