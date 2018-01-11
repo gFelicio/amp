@@ -84,7 +84,7 @@
 
     >p
     {
-        margin: 5% 10%;
+        margin: 2% 10%;
         color: $textColor;
         @include textSize;
     }
@@ -125,7 +125,7 @@
     @include fullWidth;
     display: flex;
     flex-wrap: wrap;
-    margin: 15% 5%;
+    margin: 5%;
 
     &__head
     {

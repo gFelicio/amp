@@ -41,7 +41,7 @@ h2
     text-align: center;
     text-transform: uppercase;
     color: $titleColor;
-    margin: 10% 5%;
+    margin: 5%;
 }
 
 .caption
@@ -88,6 +88,7 @@ h2
     font-family: monospace;
     font-size: 15px;
     color: $textColor;
+    text-align: center;
 }
 
 .header,
@@ -110,11 +111,10 @@ h2
 {
     max-height: 75px;
     background-color: #80adad;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .footer
 {
     background-color: #405656;
-    margin-top: 15%;
 }
