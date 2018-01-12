@@ -1,11 +1,5 @@
 @import '_vars';
 
-body
-{
-    box-sizing: border-box;
-    width: -webkit-fill-available;
-}
-
 *
 {
     box-sizing: border-box;
@@ -13,7 +7,6 @@ body
 
 html
 {
-    width: -webkit-fill-available;
     font-family: Montserrat;
 }
 
@@ -36,7 +29,6 @@ a:active
 h1,
 h2
 {
-    @include fullWidth;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -44,9 +36,16 @@ h2
     margin: 5%;
 }
 
+body,
+h1,
+h2,
 .caption
 {
     @include fullWidth;
+}
+
+.caption
+{
     padding: 0 5%;
     margin-top: 2%;
     text-align: center;
@@ -58,7 +57,6 @@ h2
 
         >a
         {
-            text-decoration: none;
             color: #a59d9d;
             font-size: 12px;
         }
@@ -94,10 +92,9 @@ h2
 .header,
 .footer
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    @include flexWrap;
+    @include centerFlex;
+    background-color: #405656;
 
     >span
     {
@@ -105,16 +102,4 @@ h2
         color: #c3bfba;
         text-align: center;
     }
-}
-
-.header
-{
-    max-height: 75px;
-    background-color: #80adad;
-    margin-bottom: 5%;
-}
-
-.footer
-{
-    background-color: #405656;
 }

@@ -62,16 +62,10 @@
     }
 }
 
-.social
+.social>a>svg
 {
-    >a
-    {
-        >svg
-        {
-            width: 40px;
-            height: 40px;
-        }
-    }
+    width: 40px;
+    height: 40px;
 }
 
 .txtDiv,
@@ -106,9 +100,9 @@
 
     &__head
     {
-        width: inherit;
-        background-color: #d0d4d2;
         padding: 1.5%;
+        border-top: 1px solid #d0d4d2;
+        border-bottom: 1px solid #d0d4d2;
 
         >span
         {
@@ -120,7 +114,6 @@
     &__body
     {
         justify-content: space-around;
-        background-color: #f5f5f5;
     }
 }
 
@@ -129,7 +122,6 @@
     max-width: 85%;
     margin: 3%;
     border: 1px solid #a2aaae;
-    background-color: #fafafa;
 
     &__body
     {
@@ -141,7 +133,6 @@
 
         >span
         {
-            font-size: 15px;
             color: grey;
             text-transform: capitalize;
         }
@@ -154,7 +145,7 @@
         >a
         {
             color: grey;
-            font-size: 10px;
+            font-size: 12px;
             padding: 3%;
             text-align: center;
             text-transform: capitalize;

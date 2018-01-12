@@ -29,4 +29,10 @@ $textColor: #737e7a;
     flex-wrap: wrap;
 }
 
+@mixin centerFlex
+{
+    justify-content: center;
+    align-items: center;
+}
+
 
