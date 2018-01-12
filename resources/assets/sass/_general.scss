@@ -3,26 +3,22 @@
 *
 {
     box-sizing: border-box;
-}
-
-html
-{
     font-family: Montserrat;
 }
 
 a
 {
     text-decoration: none;
+    color: grey;
 }
 
 a:hover
 {
-    color: teal;
+    text-decoration: underline;
 }
 
 a:active
 {
-    color: black;
     text-decoration: line-through;
 }
 
@@ -63,28 +59,30 @@ h2,
     }
 }
 
+.tags,
+.error,
+.quote
+{
+    font-family: monospace;
+    font-size: 15px;
+}
+
 .tags
 {
     background-color:#d0d0d0;
     color: black;
-    font-family: monospace;
-    font-size: 15px;
     padding: 0.3% 5%;
 }
 
 .error
 {
     color: #F63B3B;
-    font-family: monospace;
-    font-size: 15px;
 }
 
 .quote
 {
     background-color: #DDEAF0;
     padding: 5%;
-    font-family: monospace;
-    font-size: 15px;
     color: $textColor;
     text-align: center;
 }

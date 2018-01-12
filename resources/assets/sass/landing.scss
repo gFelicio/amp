@@ -20,6 +20,12 @@
     @include fullWidth;
 }
 
+span,
+small
+{
+    color: grey;
+}
+
 .imgDiv>amp-img,
 .flexDiv>a>amp-img,
 .vidDiv>amp-youtube,
@@ -47,19 +53,6 @@
 .board__foot
 {
     @include flexWrap;
-}
-
-.info
-{
-    >span
-    {
-        color: grey;
-
-        &:nth-child(2)
-        {
-            font-size: small;
-        }
-    }
 }
 
 .social>a>svg
@@ -94,20 +87,22 @@
     background-size: 10px 10px;
 }
 
+.panel__head,
+.board__body
+{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
 .panel
 {
-    margin: 5%;
-
     &__head
     {
         padding: 1.5%;
-        border-top: 1px solid #d0d4d2;
-        border-bottom: 1px solid #d0d4d2;
 
         >span
         {
             text-transform: uppercase;
-            color: grey;
         }
     }
 
@@ -117,38 +112,39 @@
     }
 }
 
+.panel,
+.board,
+.board__body
+{
+    margin: 3%;
+}
+
+.board__body,
+.board__foot
+{
+    padding: 5%;
+}
+
 .board
 {
     max-width: 85%;
-    margin: 3%;
     border: 1px solid #a2aaae;
 
     &__body
     {
-        margin: 3%;
-        padding: 5%;
-        border-top: 1px solid lightgrey;
-        border-bottom: 1px solid lightgrey;
         text-align: center;
 
         >span
         {
-            color: grey;
             text-transform: capitalize;
         }
     }
 
-    &__foot
+    &__foot>a
     {
-        padding: 5%;
-
-        >a
-        {
-            color: grey;
-            font-size: 12px;
-            padding: 3%;
-            text-align: center;
-            text-transform: capitalize;
-        }
+        font-size: 12px;
+        padding: 3%;
+        text-align: center;
+        text-transform: capitalize;
     }
 }

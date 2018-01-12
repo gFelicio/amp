@@ -46,16 +46,10 @@
         font-size: 12px;
     }
 
-    .social
+    .social>a>svg
     {
-        >a
-        {
-            >svg
-            {
-                width: 65px;
-                height: 65px;
-            }
-        }
+        width: 65px;
+        height: 65px;
     }
 
     .board
@@ -66,7 +60,6 @@
 
 @media(min-width: 2560px)
 {
-    .info>span:nth-child(2),
     .caption>span,
     .caption>span>a,
     .tags,
@@ -84,16 +77,10 @@
         padding: 3% 5%;
     }
 
-    .social
+    .social>a>svg
     {
-        >a
-        {
-            >svg
-            {
-                width: 90px;
-                height: 90px;
-            }
-        }
+        width: 90px;
+        height: 90px;
     }
 
     .txtDiv>p,
