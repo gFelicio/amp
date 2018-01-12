@@ -1,43 +1,62 @@
 @import '_general';
 
-.pageTitle
+.pageTitle,
+.imgDiv,
+.info,
+.social,
+.flexDiv>a,
+.txtDiv,
+.textFlex,
+.vidDiv,
+.subTitle,
+.carDiv,
+.panel,
+.board__head,
+.board__body,
+.board__body>span,
+.board__foot,
+.board__foot>a
 {
     @include fullWidth;
+}
+
+.imgDiv>amp-img,
+.flexDiv>a>amp-img,
+.vidDiv>amp-youtube,
+.vidiv>amp-video,
+.panel__head>span
+{
+    margin: 5% 10%;
+}
+
+.pageTitle
+{
     margin: 5% 0;
 }
 
-.mainImgDiv
+.info,
+.social
 {
-    margin: 0;
+    @include borderedSection;
 }
 
-.imgDiv
+.flexDiv,
+.panel,
+.panel__body,
+.board,
+.board__foot
 {
-    @include fullWidth;
-    margin: 0;
-
-    >amp-img
-    {
-        margin: 5% 10%;
-        border-radius: 3%;
-    }
+    @include flexWrap;
 }
 
 .info
 {
-    @include fullWidth;
-    @include borderedSection;
-
     >span
     {
-        &:nth-child(1)
-        {
-            color: grey;
-        }
+        color: grey;
 
         &:nth-child(2)
         {
-            color: grey;
             font-size: small;
         }
     }
@@ -45,9 +64,6 @@
 
 .social
 {
-    @include fullWidth;
-    @include borderedSection;
-
     >a
     {
         >svg
@@ -58,27 +74,9 @@
     }
 }
 
-.flexDiv
-{
-    margin: 0;
-    display: flex;
-
-    >a
-    {
-        @include fullWidth;
-
-        >amp-img
-        {
-            margin: 5% 10%;
-        }
-    }
-}
-
 .txtDiv,
 .textFlex
 {
-    @include fullWidth;
-    margin: 0;
     padding: 0 5%;
     text-align: justify;
 
@@ -90,28 +88,10 @@
     }
 }
 
-.vidDiv
-{
-    @include fullWidth;
-
-    >amp-youtube,
-    >amp-video
-    {
-        @include fullWidth;
-        margin: 5% 10%;
-    }
-}
-
 .subTitle
 {
-    @include fullWidth;
     padding: 0 5%;
     text-align: center;
-}
-
-.carDiv
-{
-    @include fullWidth;
 }
 
 .amp-carousel-button-next,
@@ -122,9 +102,6 @@
 
 .panel
 {
-    @include fullWidth;
-    display: flex;
-    flex-wrap: wrap;
     margin: 5%;
 
     &__head
@@ -136,15 +113,12 @@
         >span
         {
             text-transform: uppercase;
-            margin: 5% 10%;
             color: grey;
         }
     }
 
     &__body
     {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
         background-color: #f5f5f5;
     }
@@ -155,27 +129,10 @@
     max-width: 85%;
     margin: 3%;
     border: 1px solid #a2aaae;
-    display: inline-flex;
-    flex-wrap: wrap;
     background-color: #fafafa;
-
-    &__head
-    {
-        @include fullWidth;
-        display: inline-table;
-
-        >a
-        {
-            >amp-img
-            {
-
-            }
-        }
-    }
 
     &__body
     {
-        @include fullWidth;
         margin: 3%;
         padding: 5%;
         border-top: 1px solid lightgrey;
@@ -184,7 +141,6 @@
 
         >span
         {
-            @include fullWidth;
             font-size: 15px;
             color: grey;
             text-transform: capitalize;
@@ -193,15 +149,10 @@
 
     &__foot
     {
-        @include fullWidth;
-        display: flex;
-        flex-wrap: wrap;
         padding: 5%;
 
         >a
         {
-            @include fullWidth;
-            text-decoration: none;
             color: grey;
             font-size: 10px;
             padding: 3%;

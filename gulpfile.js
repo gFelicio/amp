@@ -1,7 +1,8 @@
 var elixir = require('laravel-elixir');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-
+var srcFiles = 'resources/assets/sass/*.scss';
+var destFiles = 'public/css';
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -19,12 +20,12 @@ elixir(function(mix) {
 
 gulp.task('sass', function()
 {
-    return gulp.src('resources/assets/sass/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(gulp.dest('public/css'))
+    return gulp.src(srcFiles)
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(gulp.dest(destFiles))
 });
 
 gulp.task('watch', function()
 {
-    gulp.watch('/resources/assets/sass/*.scss', ['sass'])
+    gulp.watch(srcFiles,['sass'])
 });

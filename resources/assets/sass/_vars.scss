@@ -23,7 +23,10 @@ $textColor: #737e7a;
     font-size: 18px;
 }
 
-@mixin testBorder
+@mixin flexWrap
 {
-    border: 3px solid gold;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
